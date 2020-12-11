@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Nunito:wght@800&display=swap');
+body{
+	background-color: #0d2025;
+}
+#wrapper{
+	max-width: 90%;
+	margin: 0 auto;
+}
+#grid-container{
+	display: grid;
+	grid-template-rows: 100px 50px auto 100px;
+	grid-template-columns: auto;
+	grid-template-areas:
+	"nav"
+	"header"
+	"main"
+	"footer";
+	grid-gap: 10px;
+}
+#nav{
+	grid-area: nav;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #0d2025;
+}
+#header{
+	grid-area: header;
+	color: #7dab9b;
+	text-align: center;
+	font-family: Nunito, serif;
+	font-weight: 800;
+	font-size: 48pt;
+	text-transform: uppercase;
+}
+#main{
+	grid-area: main;
+}
+h2{
+	color: #e47855;
+	text-align: left;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 800;
+	font-size: 36px;
+	border-bottom: solid #e47855 2px;
+}
+#footer{
+	grid-area: footer;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	justify-content: space-around;
+}
+li{
+	list-style-type: none;
+	padding: 0px 40px;
+}
+#round{
+	background-color: #e47855;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+a{
+	color:#7dab9b;
+	text-decoration: none;
+	font-family: 'Castoro', serif;
+}
+a:hover{
+	color:#e47855;
+}
+a:visited{
+	color: white;
+}
+p{
+	font-family: 'Castoro', serif;
+	color: white;
+	padding: 0px 10px;
+	font-size: 18px;
+}
+#logo{
+	width: 75px;
+	padding: 0px 20px;
+}
+#return{
+	display: block;
+	text-align: center;
+	font-family: 'Castoro', serif;
+}
+img{
+	width: 500px;
+	float: left;
+	padding: 8px 8px 8px 0px;
+}
+.clearfix:after {
+		content: "";
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+}
+.footer{
+	color: #e47855;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 800;
+	font-size: 20px;
+}
+.margin{
+	margin: 10px;
+}
+button{
+	background-color: #89aabf;
+	color: white;
+	padding: 10px;
+}
+.button{
+	background-color: #89aabf;
+	color: white;
+	padding: 10px;
+}
+.button:hover{
+	color: white;
+	cursor: help;
+}

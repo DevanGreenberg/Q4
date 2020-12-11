@@ -1,0 +1,115 @@
+body{
+	background-color: black;
+}
+#wrapper{
+	max-width: 90%;
+	margin: 0 auto;
+}
+#grid-container{
+	display: grid;
+	grid-template-rows: 150px auto auto;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: 
+	"header header"
+	"maina mainb"
+	"footer footer";
+	grid-gap: 10px;
+}
+#header{
+	grid-area: header;
+	border: solid black 2px;
+	background-color: #A7FA8C;
+}
+#maina{
+	grid-area: maina;
+	border: solid black 2px;
+	background-color: #DBA348;
+}
+#mainb{
+	grid-area: mainb;
+	border: solid black 2px;
+	background-color: #DBA348;
+}
+#footer{
+	grid-area: footer;
+	border: solid black 2px;
+	background-color: #AD8139;
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 32pt;
+	font-family: 'Oswald', sans-serif;
+}
+.h1mod{
+	margin: 5px 0px 15px;
+	
+}
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	
+	margin: 0;
+}
+li{
+	border: solid black 2px;
+	list-style-type: none;
+	padding: 10px;
+	margin: 0px 20px;
+	background-color: #2F6B26;
+}
+a{
+	font-family: 'Noto Sans JP', sans-serif;
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	color: skyblue;
+}
+a:visited{
+	color: yellow;
+}
+h2{
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	
+}
+.clearfix:after {
+		content: "";
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+img{
+	width: 50%;
+	padding:0px;
+	margin: 0px 5px 20px;
+	border: solid black 2px;
+}
+p{
+	text-align: justify;
+	padding: 10px;
+	font-family: 'Noto Sans JP', sans-serif;
+	margin-top: 0;
+}
+#pstyle{
+	background-color: #5C3C2F;
+	color: white;
+	margin: 5px;
+}
+.center{
+	text-align: center;
+}
+#img{
+	float: left;
+}
+#return{
+	position: relative;
+	bottom: 10px;
+	display: block;
+	text-align: center;
+}

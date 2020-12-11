@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Nunito:wght@800&display=swap');
+body{
+	background-color: #0d2025;
+}
+#wrapper{
+	max-width: 90%;
+	margin: 0 auto;
+}
+#grid-container{
+	display: grid;
+	grid-template-rows: 100px 100vh auto 100px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+	"header header header"
+	"maina maina maina"
+	"mainb mainc maind"
+	"footer footer footer";
+	grid-gap: 10px;
+}
+#header{
+	grid-area: header;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #0d2025;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	justify-content: space-around;
+}
+li{
+	list-style-type: none;
+	padding: 0px 40px;
+}
+a{
+	color:#7dab9b;
+	text-decoration: none;
+	font-family: 'Castoro', serif;
+}
+a:hover{
+	color:#e47855;
+}
+a:visited{
+	color: white;
+}
+#round{
+	background-color: #e47855;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+#maina{
+	grid-area: maina;
+	background: url(../images/fislands.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#mainb{
+	grid-area: mainb;
+	background-color: #0d2025;
+}
+#mainc{
+	grid-area: mainc;
+	background-color: #0d2025;
+}
+#maind{
+	grid-area: maind;
+	background-color: #0d2025;
+}
+#footer{
+	grid-area: footer;
+	background-color: #0d2025;
+}
+h1{
+	color: #e47855;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 800;
+	font-size: 20px;
+}
+.destinations{
+	border-bottom: solid #e47855 2px;
+}
+p{
+	font-family: 'Castoro', serif;
+	color: white;
+	padding: 0px 10px;
+}
+#logo{
+	width: 75px;
+	padding: 0px 20px;
+}
+#bigtxt{
+	font-family: 'Nunito', serif;
+	font-size: 52pt;
+	text-transform: uppercase;
+	color: #8db7b7;
+	background-color: rgba(13, 32, 37, 0.6);
+}
+#return{
+	display: block;
+	text-align: center;
+	font-family: 'Castoro', serif;
+}
+img{
+	margin: 0px;
+	padding: 0px;
+}
+.overflow{
+	height: 200px;
+	overflow: hidden;
+	width: 100%;
+}
